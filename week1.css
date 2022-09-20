@@ -1,0 +1,104 @@
+.frame{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+.left{
+    flex: none;/* 固定配置*/
+    width: 200px;
+}
+.right{
+    display: flex;/* 讓下一層次項目水平排列 */
+    justify-content: flex-end;
+    flex: auto;
+}
+.item{
+    flex: none;
+    width: 100px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.headline{
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #a6caeb;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.content{
+    background-color: #cccccc;
+    width: 1200px;
+    margin: 0 auto;
+    
+    
+}
+.content_up{
+    display: flex;
+    width: 100%;
+
+}
+.content_left{
+    display: flex;
+    background-color: rgb(76, 58, 179);
+    margin: 10px; 
+    height: 50px;
+    width: 50%;
+}
+.content_right{
+    display: flex;
+    background-color: rgb(58, 175, 179);
+    margin: 10px; 
+    height: 50px;
+    width: 50%;
+}
+.content_down{
+    width: 100%;
+    display: flex;
+}
+.content_left2{
+    background-color: rgb(76, 58, 179);
+    border:1px dashed blue;
+    
+    display: flex;
+    margin: 10px;
+
+}
+.photo_down{
+    max-width: 100%;
+}
+
+.postion{
+    font-size: 20px;
+
+}
+@media(max-width:1200px){
+    
+    .content_A{
+        flex-wrap: wrap;
+       
+    }
+    
+}
+
+@media(max-width:500px){
+    /*螢幕寬度小於500px,套用這個區塊的css*/
+    .headline{
+        font-size: 20px;
+    }
+    .desktop-menu{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .product{
+        width: 90%;
+    }
+}

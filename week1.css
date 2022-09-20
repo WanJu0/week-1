@@ -7,7 +7,8 @@
 }
 .left{
     flex: none;/* 固定配置*/
-    width: 200px;
+    width: 150px;
+    text-align: center;
 }
 .right{
     display: flex;/* 讓下一層次項目水平排列 */
@@ -46,14 +47,14 @@
 }
 .content_left{
     display: flex;
-    background-color: rgb(76, 58, 179);
+    background-color: #a6caeb;
     margin: 10px; 
     height: 50px;
     width: 50%;
 }
 .content_right{
     display: flex;
-    background-color: rgb(58, 175, 179);
+    background-color: #a6caeb;
     margin: 10px; 
     height: 50px;
     width: 50%;
@@ -63,25 +64,32 @@
     display: flex;
 }
 .content_left2{
-    background-color: rgb(76, 58, 179);
-    border:1px dashed blue;
-    
+    border:1px dashed #a6caeb;
     display: flex;
     margin: 10px;
 
 }
 .photo_down{
     max-width: 100%;
+    vertical-align: top
 }
 
 .postion{
+    background-color: #a6caeb;
     font-size: 20px;
+    text-align: center;
+    padding: 5px;
 
+}
+.prom{
+    font-size: 20px;
+    align-self: center;
+    padding-left: 10px;
 }
 @media(max-width:1200px){
     
     .content_A{
-        flex-wrap: wrap;
+       
        
     }
     

@@ -6,6 +6,8 @@ body{
     font-size: 20px;
     font-weight: bold;
     align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
 }
 .mobile-menu{
@@ -76,6 +78,15 @@ body{
     width: 100%;
     display: flex;
 }
+.star{
+    position: absolute;
+    width: 30px;
+    right: 0;
+    padding: 10px;
+}
+.content_A{
+    position: relative;
+}
 .content_left2{
     
     display: flex;
@@ -91,9 +102,13 @@ body{
     background-color: #a6caeb;
     font-size: 20px;
     text-align: center;
-    padding: 5px;
     font-family: serif;
-
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    opacity: .5;
+    line-height: 40px;
 }
 .prom{
     font-size: 20px;
